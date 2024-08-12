@@ -1,0 +1,21 @@
+CREATE VENV
+-------------------------
+C:\Users\LocationFor\Python312\python -m venv LCSPyVenv
+
+
+PYTHON VERSION
+-------------------------
+Python 3.12.5
+
+
+INITIALIZE VENV 
+-------------------------
+cd LCSPyVenv
+.\scripts\activate
+
+
+PIP INSTALLS
+-------------------------
+pip install langchain
+pip install langchain-community
+pip install langchainhub
