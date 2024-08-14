@@ -2,3 +2,5 @@ LCSPyVenv/Include
 LCSPyVenv/Lib
 LCSPyVenv/Scripts
 pyvenv.cfg
+tp_secrets.py
+__pycache__
