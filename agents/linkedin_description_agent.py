@@ -4,10 +4,10 @@ from langchain_ollama import ChatOllama
 from langchain_core.tools import Tool 
 from langchain.agents import create_react_agent, AgentExecutor
 from langchain import hub
-from tools.tools import get_profile_url_tavily
+from tools.tools import get_profile_content_tavily
 from config.tp_secrets import Secrets
 
-def lookup(name: str) -> str:
+def content_lookup(name: str) -> str:
 
     ##### MAIN LLM
     # the main llm that will be used throughout
@@ -17,8 +17,8 @@ def lookup(name: str) -> str:
     ##### UNIQUE PROMPT
     # i.e. the question that I want solved
 
-    template = """given the full name {name_of_person} I want you to get it me a link to their
-        LinkedIn profile page.  Your answer should contain only a URL."""
+    template = """given the full name {name_of_person} I want you to get their most recent
+        LinkedIn profile description.  Your answer should contain a brief LinkedIn profile description."""
 
     prompt_template = PromptTemplate(
         template=template, input_variables=['name_of_person']
@@ -29,9 +29,9 @@ def lookup(name: str) -> str:
 
     tools_for_agent = [
         Tool(
-            name="Crawl Google 4 LinkedIn profile page",
-            func=get_profile_url_tavily,
-            description="useful for when you need get the LinkedIn Page URL" # used to determine if this tool should be used or not
+            name="Call Tavity for LinkedIn profile description",
+            func=get_profile_content_tavily,
+            description="useful for when you need get a LinkedIn user description" # used to determine if this tool should be used or not
         )
     ]
 
@@ -80,5 +80,3 @@ def lookup(name: str) -> str:
     
     return linkedin_profile_url
 
-if __name__=="__main__":
-    linkedin_url = lookup(name='Eden Marco')
