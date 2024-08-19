@@ -12,7 +12,8 @@ def lookup(name: str) -> str:
     ##### MAIN LLM
     # the main llm that will be used throughout
 
-    llm = ChatOllama(model="llama3.1")
+    # llm = ChatOllama(model="llama3.1")
+    llm = ChatOllama(model="gemma2")
 
     ##### UNIQUE PROMPT
     # i.e. the question that I want solved

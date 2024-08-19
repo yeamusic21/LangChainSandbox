@@ -27,7 +27,7 @@ OLLAMA INSTALLS
 -------------------------
 https://ollama.com/
 ollama run llama3.1
-
+ollama run gemma2
 
 PATH UPDATES
 -------------------------
