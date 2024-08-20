@@ -37,6 +37,8 @@ def lookup(name: str) -> str:
     ]
 
     os.environ['LANGCHAIN_API_KEY'] = Secrets.langsmith_api_key
+    os.environ['LANGCHAIN_TRACING_V2'] = 'true'
+    os.environ['LANGCHAIN_PROJECT'] = 'Ice Breaker'
     react_prompt = hub.pull("hwchase17/react")
     # react_template = """ 
 
