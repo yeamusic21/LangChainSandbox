@@ -23,6 +23,7 @@ pip install langchainhub
 pip install langchain-ollama
 pip install Flask
 pip install langsmith
+pip install langchain-pinecone
 
 
 OLLAMA INSTALLS
