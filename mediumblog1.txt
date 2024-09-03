@@ -1,36 +1,4 @@
-
-Search
-Write
-Sign up
-
-Sign in
-
-
-
-Top highlight
-
 Vector Databases: A Beginner’s Guide!
-Pavan Belagatti
-Data And Beyond
-Pavan Belagatti
-
-·
-Follow
-
-Published in
-Data And Beyond
-
-·
-10 min read
-·
-Aug 25, 2023
-1.1K
-
-
-6
-
-
-
 
 In the age of burgeoning data complexity and high-dimensional information, traditional databases often fall short when it comes to efficiently handling and extracting meaning from intricate datasets. Enter vector databases, a technological innovation that has emerged as a solution to the challenges posed by the ever-expanding landscape of data.
 
@@ -38,7 +6,6 @@ Understanding Vector Databases
 Vector databases have gained significant importance in various fields due to their unique ability to efficiently store, index, and search high-dimensional data points, often referred to as vectors. These databases are designed to handle data where each entry is represented as a vector in a multi-dimensional space. The vectors can represent a wide range of information, such as numerical features, embeddings from text or images, and even complex data like molecular structures.
 
 Let’s represent the vector database using a 2D grid where one axis represents the color of the animal (brown, black, white) and the other axis represents the size (small, medium, large).
-
 
 In this representation:
 
@@ -51,18 +18,16 @@ You can imagine each image as a point plotted on this grid based on its color an
 Explain Vector Databases Like I’m 5
 Imagine you have a bunch of different types of fruit, like apples, oranges, bananas, and grapes. You love the taste of apples and want to find other fruits that taste similar to apples. Instead of sorting the fruits by their colors or sizes, you decide to group them based on how sweet or sour they are.
 
-
 So, you put all the sweet fruits together, like apples, grapes, and ripe bananas. You put the sour fruits in another group, like oranges and unripe bananas. Now, when you want to find fruits that taste like apples, you just look in the group of sweet fruits because they’re more likely to have a similar taste.
 
 But what if you’re looking for something specific, like a fruit that’s as sweet as an apple but also has a tangy flavor like an orange? It might be a bit hard to find in your groups, right? That’s when you ask someone who knows a lot about different fruits, like a fruit expert. They can suggest a fruit that matches your unique taste request because they know about the flavors of many fruits.
 
-In this case, that knowledgeable person is acting like a “vector database.” They have a lot of information about different fruits and can help you find one that fits your special taste, even if it’s not based on the usual things like colors or shapes.
+In this case, that knowledgeable person is acting like a "vector database." They have a lot of information about different fruits and can help you find one that fits your special taste, even if it’s not based on the usual things like colors or shapes.
 
 Similarly, a vector database is like this helpful expert for computers. It’s designed to remember lots of details about things, like foods, in a special way. So, if you’re looking for a food that’s similar in taste to something you love, or a food with a combination of flavors you enjoy, this vector database can quickly find the right options for you. It’s like having a flavor expert for computers that knows all about tastes and can suggest great choices based on what you’re craving, just like that knowledgeable person with fruit.
 
 How Do Vector Databases Store Data?
 Vector databases store data by using vector embeddings. Vector embeddings in vector databases refer to a way of representing objects, such as items, documents, or data points, as vectors in a multi-dimensional space. Each object is assigned a vector that captures various characteristics or features of that object. These vectors are designed in such a way that similar objects have vectors that are closer to each other in the vector space, while dissimilar objects have vectors that are farther apart.
-
 
 Think of vector embeddings like a special code that describes the important aspects of an object. Imagine you have different animals, and you want to represent them in a way that similar animals have similar codes. For instance, cats and dogs might have codes that are quite close, as they share common features like being four-legged and having fur. On the other hand, animals like fish and birds would have codes that are further apart, reflecting their differences.
 
@@ -73,8 +38,6 @@ For example, in a music streaming app, songs could be represented as vectors usi
 Vector embeddings are a way of turning complex objects into numerical vectors that capture their characteristics, and vector databases use these embeddings to efficiently search and retrieve similar or relevant objects based on their positions in the vector space.
 
 How Do Vector Databases Work?
-
-Image credits: KDnuggets
 
 User Query:
 You input a question or request into the ChatGPT application.
@@ -94,8 +57,7 @@ These new embeddings are used to find similar embeddings in the database, connec
 How Vector Databases Know Which Vectors are Similar?
 A vector database determines the similarity between vectors using various mathematical techniques, with one of the most common methods being cosine similarity.
 
-When you search for “Best cricket player in the world” on Google and it shows a list of top players, there are several steps involved, of which, cosine similarity is the main one.
-
+When you search for "Best cricket player in the world" on Google and it shows a list of top players, there are several steps involved, of which, cosine similarity is the main one.
 
 The vector representation of the search query is compared to the vector representations of all the player profiles in the database using cosine similarity. The more similar the vectors are, the higher the cosine similarity score.
 
@@ -108,7 +70,7 @@ The significance of vector databases lies in their capabilities and applications
 Vector databases excel at performing similarity searches, where you can retrieve vectors that are most similar to a given query vector. This is crucial in various applications like recommendation systems (finding similar products or content), image and video retrieval, facial recognition, and information retrieval.
 
 - High-Dimensional Data:
-Traditional relational databases struggle with high-dimensional data because of the “curse of dimensionality,” where distances between data points become less meaningful as the number of dimensions increases. Vector databases are designed to handle high-dimensional data more efficiently, making them suitable for applications like natural language processing, computer vision, and genomics.
+Traditional relational databases struggle with high-dimensional data because of the "curse of dimensionality," where distances between data points become less meaningful as the number of dimensions increases. Vector databases are designed to handle high-dimensional data more efficiently, making them suitable for applications like natural language processing, computer vision, and genomics.
 
 - Machine Learning and AI:
 Vector databases are often used to store embeddings generated by machine learning models. These embeddings capture the essential features of the data and can be used for various tasks, such as clustering, classification, and anomaly detection.
@@ -144,266 +106,8 @@ With applications ranging from e-commerce and content platforms to healthcare an
 SingleStore as a Vector Database:
 Harness the robust vector database capabilities of SingleStoreDB, tailored to seamlessly serve AI-driven applications, chatbots, image recognition systems, and more. With SingleStoreDB at your disposal, the necessity for maintaining a dedicated vector database for your vector-intensive workloads becomes obsolete.
 
-
 Diverging from conventional vector database approaches, SingleStoreDB takes a novel approach by housing vector data within relational tables alongside diverse data types. This innovative amalgamation empowers you to effortlessly access comprehensive metadata and additional attributes pertaining to your vector data, all while leveraging the extensive querying prowess of SQL.
 
 SingleStoreDB has been meticulously architected with a scalable framework, ensuring unfaltering support for your burgeoning data requirements. Say goodbye to limitations and embrace a solution that grows in tandem with your data demands.
 
 Sign up to SingleStore to start using it as a vector database. You when you sign up, you will receive $600 free credits.
-
-Here is a complete vector database tutorial you can try.
-
-Vector Databases: A Hands-On Tutorial!
-At the heart of this revolution lies the concept of vector databases, a groundbreaking development that is reshaping…
-levelup.gitconnected.com
-
-Example of Face Matching with SQL in SingleStore
-We loaded 16,784,377 rows into this table:
-
-create table people(
-  id bigint not null primary key,
-  filename varchar(255),
-  vector blob
-);
-Each row represents one image of a celebrity, and contains a unique ID number, the file name where the image is stored and a 128-element floating point vector representing the meaning of the face. This vector was obtained using facenet, a pre-trained neural network for creating vector embeddings from a face image.
-
-Don’t worry, you don’t need to understand the AI to use this kind of approach — you just need to use somebody else’s pre-trained neural network, or any tool that can provide you summary vectors for an object.
-
-Now, we query this table using:
-
-select vector
-into @v
-from people
-where filename = "Emma_Thompson/Emma_Thompson_0001.jpg";
-
-select filename, dot_product(vector, @v) as score
-from people where score > 0.1
-order by score desc
-limit 5;
-The first query gets a query vector @v for the image Emma_Thompson_0001.jpg. The second query finds the top five closest matches:
-
-
-Emma_Thompson_0001.jpg is a perfect match for itself, so the score is close to 1. But interestingly, the next closest match is Emma_Thompson_0002.jpg. Here are the query image and closest match:
-
-
-Moreover, the search speed we obtained was truly incredible. The 2nd query took only 0.005 seconds on a 16 vcpu machine. And it processed all 16M vectors. This is a rate of over 3.3 billion vector matches per second.
-
-Know more about this experiment in the original article. Image Matching in SQL With SingleStoreDB
-
-Now, it is time for you to play around with SingleStore.
-
-Sign up to SigleStore & claim your $600 worth of free usage.
-
-The significance of vector databases stems from their ability to handle complex, high-dimensional data while offering efficient querying and retrieval mechanisms. As data continues to grow in complexity and volume, vector databases are becoming increasingly vital in a wide range of applications across industries.
-
-Note & Disclaimer: I have taken the help of ChatGPT in writing some parts of this article.
-
-The article is originally published on dev.to
-
-Data Science
-Database
-Data
-Data Analysis
-Vector Database
-1.1K
-
-
-6
-
-
-Pavan Belagatti
-Data And Beyond
-Written by Pavan Belagatti
-4.5K Followers
-·
-Writer for 
-Data And Beyond
-
-Developer Evangelist | AI/ML| DevOps | Data Science! Currently working at SingleStore as a Developer Evangelist.
-
-Follow
-
-More from Pavan Belagatti and Data And Beyond
-Semantic Chunking for Enhanced RAG Applications!
-Pavan Belagatti
-Pavan Belagatti
-
-in
-
-Level Up Coding
-
-Semantic Chunking for Enhanced RAG Applications!
-Large language models (LLMs) have created a huge opportunity for aspiring researchers and AI enthusiasts. But, we need to understand one…
-Jul 30
-84
-Mastering Exploratory Data Analysis (EDA): Everything You Need To Know
-Sze Zhong LIM
-Sze Zhong LIM
-
-in
-
-Data And Beyond
-
-Mastering Exploratory Data Analysis (EDA): Everything You Need To Know
-A systematic approach to EDA your data and prep it for machine learning.
-Apr 6
-789
-7
-5 Realistic Ways to Make Money With AI
-Yennhi95zz
-Yennhi95zz
-
-in
-
-Data And Beyond
-
-How to Use AI for Earning Passive Income
-5 Realistic Ways to Make Money With AI
-
-Jul 20
-84
-3
-Implementing Retrieval Augmented Generation (RAG): A Hands-On Guide!
-Pavan Belagatti
-Pavan Belagatti
-
-in
-
-Generative AI
-
-Implementing Retrieval Augmented Generation (RAG): A Hands-On Guide!
-Large language models (LLMs) are becoming the backbone of most of the organizations these days as the whole world is making the transition…
-Apr 17
-368
-4
-See all from Pavan Belagatti
-See all from Data And Beyond
-Recommended from Medium
-All You Need to Know about Vector Databases and How to Use Them to Augment Your LLM Apps
-Dominik Polzer
-Dominik Polzer
-
-in
-
-Towards Data Science
-
-All You Need to Know about Vector Databases and How to Use Them to Augment Your LLM Apps
-A Step-by-Step Guide to Discover and Harness the Power of Vector Databases
-
-Sep 17, 2023
-1.7K
-12
-Do Not Use LLM or Generative AI For These Use Cases
-Christopher Tao
-Christopher Tao
-
-in
-
-Towards AI
-
-Do Not Use LLM or Generative AI For These Use Cases
-Choose correct AI techniques for the right use case families
-
-Aug 10
-2.2K
-27
-Lists
-
-
-
-Predictive Modeling w/ Python
-20 stories
-·
-1469 saves
-Principal Component Analysis for ML
-Time Series Analysis
-deep learning cheatsheet for beginner
-Practical Guides to Machine Learning
-10 stories
-·
-1790 saves
-
-
-
-ChatGPT prompts
-48 stories
-·
-1935 saves
-
-
-
-data science and AI
-40 stories
-·
-226 saves
-Implementing Retrieval Augmented Generation (RAG): A Hands-On Guide!
-Pavan Belagatti
-Pavan Belagatti
-
-in
-
-Generative AI
-
-Implementing Retrieval Augmented Generation (RAG): A Hands-On Guide!
-Large language models (LLMs) are becoming the backbone of most of the organizations these days as the whole world is making the transition…
-Apr 17
-368
-4
-17 Mindblowing Python Automation Scripts I Use Everyday
-Abhay Parashar
-Abhay Parashar
-
-in
-
-The Pythoneers
-
-17 Mindblowing Python Automation Scripts I Use Everyday
-Scripts That Increased My Productivity and Performance
-
-2d ago
-6.9K
-62
-Which Vector Database Should You Use? Choosing the Best One for Your Needs
-Plaban Nayak
-Plaban Nayak
-
-in
-
-The AI Forum
-
-Which Vector Database Should You Use? Choosing the Best One for Your Needs
-Introduction
-Apr 18
-536
-8
-LLM Architectures Explained: NLP Fundamentals (Part 1)
-Vipra Singh
-Vipra Singh
-
-LLM Architectures Explained: NLP Fundamentals (Part 1)
-Deep Dive into the architecture & building of real-world applications leveraging NLP Models starting from RNN to the Transformers.
-
-Aug 15
-1.1K
-9
-See more recommendations
-Help
-
-Status
-
-About
-
-Careers
-
-Press
-
-Blog
-
-Privacy
-
-Terms
-
-Text to speech
-
-Teams
-
