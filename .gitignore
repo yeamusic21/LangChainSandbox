@@ -4,3 +4,5 @@ LCSPyVenv/Scripts
 pyvenv.cfg
 tp_secrets.py
 __pycache__
+langchain-docs
+*.pdf
