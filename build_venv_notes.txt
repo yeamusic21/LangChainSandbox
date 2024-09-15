@@ -2,18 +2,15 @@ CREATE VENV
 -------------------------
 C:\Users\LocationFor\Python312\python -m venv LCSPyVenv
 
-
 PYTHON VERSION
 -------------------------
 Python 3.12.5
-
 
 INITIALIZE VENV 
 -------------------------
 cd LCSPyVenv
 .\scripts\activate
 cd ..
-
 
 PIP INSTALLS
 -------------------------
@@ -29,6 +26,7 @@ pip install faiss-cpu
 pip install beautifulsoup4
 pip install streamlit
 pip install streamlit-chat
+pip install firecrawl-py
 
 OLLAMA INSTALLS
 -------------------------
@@ -39,3 +37,7 @@ ollama run gemma2
 PATH UPDATES
 -------------------------
 set PATH=%PATH%;C:\Users\LocationFor\Ollama
+
+RUN STREAMLIT APPS
+-------------------------
+streamlit run [name_of_py_script].py
