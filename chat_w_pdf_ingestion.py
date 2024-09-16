@@ -9,7 +9,7 @@ from langchain_pinecone import PineconeVectorStore
 def ingest_docs():
     os.environ['INDEX_NAME'] = Secrets.pinecone_index_name2
     os.environ['PINECONE_API_KEY'] = Secrets.pinecone_api_key
-    embeddings = OllamaEmbeddings(model="gemma2")
+    embeddings = OllamaEmbeddings(model="gemma2") # 3584 dim
     loader = ReadTheDocsLoader("langchain-docs/langchain-docs/api.python.langchain.com/en/latest/callbacks", encoding='utf8')
     raw_documents = loader.load()
     print(f"loaded {len(raw_documents)} documents")
